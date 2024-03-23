@@ -1,7 +1,13 @@
+using FluentValidation;
+using FluentValidation_Sample.Models;
+using FluentValidation_Sample.Validations;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<IValidator<Customer>, CustomerValidator>();
 
 var app = builder.Build();
 
