@@ -38,7 +38,9 @@ dotnet run
 ### Executando via DockerFile
 O projeto possui um arquivo dockerfile caso queira rodar via docker:
 ```
-docker compoose up -d
+docker image build -t fluentvalidation-sample -f .\FluentValidation-Sample\Dockerfile .
+
+docker container run --name FluentValidantion-Sample -d -p 8080:8080 fluentvalidation-sample
 ```
 
 ## Tecnologias utilizadas
