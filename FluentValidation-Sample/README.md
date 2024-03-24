@@ -8,19 +8,19 @@ Este projeto é um aplicativo ASP NET CORE MVC que realiza validações de um fo
 Exemplo 1:
 
 <p align="left">
-  <img alt="Exemplo 1" title="#Exemplo 1" src="./wwwroot/img/screen1.webp" width="400px">
+  <img alt="Exemplo 1" title="#Exemplo 1" src="./wwwroot/img/screen1.webp" width="600px">
 </p>
 
 Exemplo 2: 
 
 <p align="left">
-  <img alt="Exemplo 2" title="#Exemplo 2" src="./wwwroot/img/screen2.webp" width="400px">
+  <img alt="Exemplo 2" title="#Exemplo 2" src="./wwwroot/img/screen2.webp" width="600px">
 </p>
 
 Exemplo 3:
 
 <p align="left">
-  <img alt="Exemplo 3" title="#Exemplo 3" src="./wwwroot/img/screen3.webp" width="400px">
+  <img alt="Exemplo 3" title="#Exemplo 3" src="./wwwroot/img/screen3.webp" width="600px">
 </p>
 
 ## Como rodar o projeto 
