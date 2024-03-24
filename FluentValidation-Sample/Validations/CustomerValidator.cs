@@ -21,25 +21,7 @@ namespace FluentValidation_Sample.Validations
                 .NotEmpty().WithName("Idade").WithMessage(Constants.REQUIRE_MESSAGE)
                 .InclusiveBetween(18, 80).WithMessage($"{Constants.INCLUSIVE_BEETWEN_MESSAGE} anos"); 
 
-            RuleFor(customer => customer.Address)
-                .NotEmpty().WithName("Endereço").WithMessage(Constants.REQUIRE_MESSAGE)
-                .MaximumLength(100).WithMessage(Constants.MAX_LENGHT_MESSAGE);
-
-            RuleFor(customer => customer.Region)
-                .NotEmpty().WithName("Bairro").WithMessage(Constants.REQUIRE_MESSAGE)
-                .MaximumLength(100).WithMessage(Constants.MAX_LENGHT_MESSAGE);
-
-            RuleFor(customer => customer.City)
-                .NotEmpty().WithName("Cidade").WithMessage(Constants.REQUIRE_MESSAGE)
-                .MaximumLength(100).WithMessage(Constants.MAX_LENGHT_MESSAGE);
-
-            RuleFor(customer => customer.State)
-                .NotEmpty().WithName("Estado").WithMessage(Constants.REQUIRE_MESSAGE)
-                .MaximumLength(100).WithMessage(Constants.MAX_LENGHT_MESSAGE);
-
-            RuleFor(customer => customer.ZipCode)
-                .NotEmpty().WithName("CEP").WithMessage(Constants.REQUIRE_MESSAGE)
-                .MaximumLength(100).WithMessage(Constants.MAX_LENGHT_MESSAGE);
+            RuleFor(customer => customer.Address).SetValidator(new AddressValidator());
         }
     }
 }

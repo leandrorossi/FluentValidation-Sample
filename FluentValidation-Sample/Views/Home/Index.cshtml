@@ -40,29 +40,29 @@
                 <span asp-validation-for="Age" class="text-danger form-text"></span>
             </div>
             <div class="col-md-6">
-                <label asp-for="Address" class="form-label">Endereço</label>
-                <input asp-for="Address" type="text" class="form-control" placeholder="Endereço" />
-                <span asp-validation-for="Address" class="text-danger form-text"></span>
+                <label asp-for="Address.AddressName" class="form-label">Endereço</label>
+                <input asp-for="Address.AddressName" type="text" class="form-control" placeholder="Endereço" />
+                <span asp-validation-for="Address.AddressName" class="text-danger form-text"></span>
             </div>
             <div class="col-md-6">
-                <label asp-for="Region" class="form-label">Bairro</label>
-                <input asp-for="Region" type="text" class="form-control" placeholder="Bairro" />
-                <span asp-validation-for="Region" class="text-danger form-text"></span>
+                <label asp-for="Address.Region" class="form-label">Bairro</label>
+                <input asp-for="Address.Region" type="text" class="form-control" placeholder="Bairro" />
+                <span asp-validation-for="Address.Region" class="text-danger form-text"></span>
             </div>
             <div class="col-md-4">
-                <label asp-for="City" class="form-label">Cidade</label>
-                <input asp-for="City" type="text" class="form-control" placeholder="Cidade" />
-                <span asp-validation-for="City" class="text-danger form-text"></span>
+                <label asp-for="Address.City" class="form-label">Cidade</label>
+                <input asp-for="Address.City" type="text" class="form-control" placeholder="Cidade" />
+                <span asp-validation-for="Address.City" class="text-danger form-text"></span>
             </div>
             <div class="col-md-4">
-                <label asp-for="State" class="form-label">Estado</label>
-                <input asp-for="State" type="text" class="form-control" placeholder="Estado" />
-                <span asp-validation-for="State" class="text-danger form-text"></span>
+                <label asp-for="Address.State" class="form-label">Estado</label>
+                <input asp-for="Address.State" type="text" class="form-control" placeholder="Estado" />
+                <span asp-validation-for="Address.State" class="text-danger form-text"></span>
             </div>
             <div class="col-md-4">
-                <label asp-for="ZipCode" class="form-label">CEP</label>
-                <input asp-for="ZipCode" type="text" class="form-control" placeholder="CEP" />
-                <span asp-validation-for="ZipCode" class="text-danger form-text"></span>
+                <label asp-for="Address.ZipCode" class="form-label">CEP</label>
+                <input asp-for="Address.ZipCode" type="text" class="form-control" placeholder="CEP" />
+                <span asp-validation-for="Address.ZipCode" class="text-danger form-text"></span>
             </div>
             <input type="submit" value="Enviar" class="btn btn-success mt-4 mx-auto w-25" />    
         </div>
